@@ -1,9 +1,79 @@
-body {
-    text-align: center;
-    font-family: Arial;
-    background-color: lightblue;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-h1 {
-    color: darkblue;
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f1eb;
+    color: #2e2e2e;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 60px;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #2e2e2e;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #7a6a5a;
+}
+
+/* HERO */
+.hero {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 80px;
+}
+
+/* TEXT */
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #6b6b6b;
+    margin-bottom: 25px;
+}
+
+/* BUTTON */
+button {
+    width: fit-content;
+    padding: 12px 28px;
+    border: none;
+    background-color: #2e2e2e;
+    color: white;
+    font-size: 14px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+/* HOVER EFFECT */
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    background-color: #444;
 }
